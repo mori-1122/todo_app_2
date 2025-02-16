@@ -1,15 +1,75 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* 全体のレイアウトを調整 */
+body {
+    width: 414px;
+    height: 921px; 
+    margin: 0 auto;
+    padding: 26px;
+    font-family: Avenir, sans-serif;
+    background-color: #fff;
+  }
+  .header-container {
+    background-color: white; /* 背景色 */
+    padding: 20px 16px; /* 余白を追加 */
+    border-bottom: 1px solid black
+  }
+  
+  .boards-title {
+    color: #000;
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  /* 見出しのスタイル */
+  h2 {
+    color: #000;
+    font-family: Avenir;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  /* 入力フィールドのサイズと余白 */
+  .input-field {
+    width: 362px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    border: none;
+    padding: 0 10px; 
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .input-field.text-area-field {
+    width: 362px;
+    height: 203px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #F4F4F4;
+    margin-bottom: 350px;
+  }
+  /* 送信ボタンのスタイル */
+  .btn-submit {
+    width: 362px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: #F8BD1C;
+    color: #FFF;
+    font-family: Avenir;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: none;
+  }
+  
+  .btn-submit:hover {
+    background-color: #c6a752;
+  }
